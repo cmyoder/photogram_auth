@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @photos = User.find(params[:id]).photos
+    @photos = Photo.where( :user_id => params[:id])
   end
 
 end

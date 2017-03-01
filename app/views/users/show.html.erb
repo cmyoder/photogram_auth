@@ -1,5 +1,6 @@
 <ul>
   <% @photos.each do |photo| %>
+    <li><%= photo.caption %></li>
     <li><img src="<%= photo.image %>"></li>
   <% end %>
 </ul>
